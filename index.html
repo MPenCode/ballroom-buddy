@@ -19,7 +19,18 @@
         },
       };
     </script>
-    <style></style>
+    <style>
+      @media (max-width: 950px) {
+        html{
+          font-size: 60%;
+        }
+      }
+      @media (max-width: 600px) {
+        html{
+          font-size: 30%;
+        }
+      }
+    </style>
     <title>Ballroom-Buddy</title>
   </head>
   <body>
@@ -46,7 +57,7 @@
         </ul>
         <div
           id="dropdown"
-          class="lg:hidden flex rounded border-2 border-light-yellow w-12 h-12 justify-evenly items-center flex-col"
+          class="lg:hidden flex rounded border-2 border-light-yellow w-12 h-12 justify-evenly sm:items-center flex-col"
         >
           <span class="w-9/12 h-1 bg-light-yellow block"></span>
           <span class="w-9/12 h-1 bg-light-yellow block"></span>
@@ -64,16 +75,15 @@
             Dance Chemistry: Match, Move, Groove!
           </h1>
           <p class="font-light text-justify">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi
             Unlock the magic of dance with a partner who shares your rhythm and
             passion. Whether you're a seasoned pro or just starting out, our
             platform connects you with like-minded dancers ready to match your
             moves and elevate your experience. From salsa to swing, discover the
             perfect chemistry that turns every step into a shared adventure.
-            Let’s get moving—your ideal dance partner is just a click away!
+            Lets get moving—your ideal dance partner is just a click away!
           </p>
           <button
-            class="w-6/12 bg-light-yellow rounded-2xl transition duration-1000 text-xl text-dark-blue py-2 px-8 uppercase hover:translate-x-10 hover:-translate-y-10 hover:border-4 hover:border-dark-pink"
+            class="w-9/12 xl:w-6/12 bg-light-yellow rounded-2xl transition duration-1000  text-xl text-dark-blue py-2 px-8 uppercase hover:translate-x-10 hover:-translate-y-10 hover:border-4 hover:border-dark-pink"
           >
             start your journey
           </button>
@@ -165,17 +175,17 @@
         <div>
           <h2 class="pb-3 text-3xl">Find your dance Partner</h2>
           <div class="px-6 grid grid-cols-1 place-items-start max-w-sm w-80">
-            <label class="p-1">Full Name:</label
-            ><input
+            <label class="p-1">Full Name:</label>
+            <input
               type="text"
               class="bg-dark-blue p-1 max-w-sm w-80 divide-y-8 divide-dashed divide-[#F4E3B8]"
             />
-            <label class="p-1">Email:</label
-            ><input type="email" class="bg-dark-blue p-1 max-w-sm w-80" />
-            <label class="p-1">Phone Number:</label
-            ><input type="tel" class="bg-dark-blue p-1 max-w-sm w-80" />
-            <label class="p-1">Your location:</label
-            ><input type="text" class="bg-dark-blue p-1 max-w-sm w-80" />
+            <label class="p-1">Email:</label>
+            <input type="email" class="bg-dark-blue p-1 max-w-sm w-80" />
+            <label class="p-1">Phone Number:</label>
+            <input type="tel" class="bg-dark-blue p-1 max-w-sm w-80" />
+            <label class="p-1">Your location:</label>
+            <input type="text" class="bg-dark-blue p-1 max-w-sm w-80" />
             <label class="p-1">Your gender:</label>
             <select
               name=""
@@ -197,7 +207,7 @@
               <option value="bothl">both but prefer leader</option>
               <option value="bothf">both but prefer folower</option>
             </select>
-          </label>
+       
           <button>start your journey</button>
         </div>
       </section>
