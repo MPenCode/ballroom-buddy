@@ -82,60 +82,114 @@
           <img src="images/heroImg.webp" alt="hero image" />
         </div>
       </section>
-      <section id="info" class="grid grid-cols-2 border">
-        <div>
-          <h2>how we do this?</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
-            soluta deserunt id molestiae, eum sint, distinctio rerum omnis
-            laudantium ullam aspernatur a est exercitationem incidunt tenetur.
-            Omnis laborum provident reprehenderit.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-            necessitatibus quasi accusantium earum quis ad numquam. Asperiores
-            error cupiditate, possimus omnis veritatis dolores consectetur ut
-            quo alias, sunt tempore repellendus!
-          </p>
+      <section id="info" class="grid place-item-center grid-rows-2 border bg-[#F4E3B8]">
+        <div class="grid place-item-center">
+          <h2 class="text-center text-3xl font-bold pt-5">how we do this?</h2>
+          <div class="px-[10%] text-justify max-w-screen-sm">
+            <p class="text-sm leading-tight">
+              Ballroom-Buddy helps you find the perfect dance partner with ease.
+              Create a profile, specify your preferred dance styles, skill
+              level, and role (leader or follower), and search for dancers
+              nearby. Our platform connects you directly with potential
+              partners, allowing you to chat, schedule practices, and attend
+              events. Whether you're preparing for competitions or social
+              dancing, Ballroom-Buddy makes it simple to connect and dance.
+            </p>
+          </div>
+          <div class="px-[10%] text-justify max-w-screen-sm">
+            <p class="text-sm leading-tight">
+              Dance is best when shared. Ballroom-Buddy brings dancers together,
+              matching leaders and followers across a variety of styles and
+              levels. Easily filter by location, dance type, and experience to
+              find the right partner. Our verified profiles ensure trust and
+              safety, and our event listings help you explore local dance
+              opportunities. At Ballroom-Buddy, we believe every dancer deserves
+              the perfect partner to share the joy of movement.
+            </p>
+          </div>
         </div>
         <div>
-          <h2>what makes us different</h2>
-          <ul>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+          <h2 class="text-center text-3xl font-bold pb-5">What makes us special</h2>
+          <ul class="px-[7%] text-justify max-w-screen-sm list-disc text-sm leading-loose">
+            <li>
+              Role Matching: Find partners who match your role as a leader,
+              follower, or both.
+            </li>
+            <li>
+              Diverse Styles: From ballroom to Latin, we cover a wide range of
+              dance styles.
+            </li>
+            <li>
+              Local Partners: Connect with dancers near you for convenient
+              meetups.
+            </li>
+            <li>
+              All Skill Levels: Whether you're a beginner or a pro, there's a
+              partner for you.
+            </li>
+            <li>
+              Supportive Community: Join a welcoming space for dancers of all
+              backgrounds.
+            </li>
+            <li>
+              Verified Profiles: Trust in verified profiles for safer
+              connections.
+            </li>
+            <li>
+              Instant Messaging: Chat with potential partners to arrange for
+              socials and practices.
+            </li>
+            <li>
+              Global Reach: Whether you're traveling Ballroom-Buddy allows you
+              to find dance partners anywhere in the world.
+            </li>
+            <li>
+              Custom Match Suggestions: Receive personalized partner
+              recommendations based on your dance preferences and past
+              connections.
+            </li>
+            <li>
+              Seamless Integration: Sync with your calendar or other apps to
+              never miss a socoal or festival.
+            </li>
           </ul>
         </div>
       </section>
-      <section id="contact" class="grid grid-cols-2 border">
-        <div>
-          <img src="https://picsum.photos/200/300" alt="" />
+
+
+      <section id="contact" class="text-center text-[#F4E3B8] bg-dark-blue">
+        <div class="p-6 grid grid-rows-1 place-items-center">
+          <img class="" src="/images/contactImg.webp" alt="" />
+
         </div>
         <div>
-          <h2>find your dance partner</h2>
-          <label>full name<input type="text" /></label>
-          <label>email<input type="text" /></label>
-          <label>phone number<input type="text" /></label>
-          <label>your location<input type="text" /></label>
-          <label for=""
-            >your gender
-            <select name="" id="">
-              <option value="">please select an option</option>
-              <option value="male">male</option>
-              <option value="female">female</option>
-              <option value="diverse">diverse</option>
+          <h2 class="pb-3 text-3xl">Find your dance Partner</h2>
+          <div class="px-6 grid grid-cols-1 place-items-start max-w-sm w-80">
+            <label class="p-1">Full Name:</label
+            ><input
+              type="text"
+              class="bg-dark-blue p-1 max-w-sm w-80 divide-y-8 divide-dashed divide-[#F4E3B8]"
+            />
+            <label class="p-1">Email:</label
+            ><input type="email" class="bg-dark-blue p-1 max-w-sm w-80" />
+            <label class="p-1">Phone Number:</label
+            ><input type="tel" class="bg-dark-blue p-1 max-w-sm w-80" />
+            <label class="p-1">Your location:</label
+            ><input type="text" class="bg-dark-blue p-1 max-w-sm w-80" />
+            <label class="p-1">Your gender:</label>
+            <select
+              name=""
+              id=""
+              class="bg-dark-blue max-w-sm w-80 divide-y-8 divide-dashed divide-[#F4E3B8]"
+            >
+              <option value="">-- select an option --</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="diverse">Diverse</option>
             </select>
-          </label>
-          <label for=""
-            >what dancing role do you prefer?
-            <select name="" id="">
+            <label class="p-1">Dancing Role</label>
+            <select name="" id="" class="bg-dark-blue max-w-sm w-80">
+
               <option value="">-- choose your role --</option>
               <option value="leader">leader</option>
               <option value="folower">folower</option>
