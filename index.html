@@ -105,12 +105,12 @@
       </section>
       <section
         id="info"
-        class="grid place-item-center grid-rows-2 border bg-[#F4E3B8]"
+        class="grid place-item-center grid-rows-2 md:grid-cols-2 border bg-[#F4E3B8]"
       >
-        <div class="grid place-item-center">
+        <div class="flex flex-col items-center justify-center">
           <h2 class="text-center text-3xl font-bold pt-5">how we do this?</h2>
           <div class="px-[10%] text-justify max-w-screen-sm">
-            <p class="text-sm leading-tight">
+            <p class="text-sm leading-tight p-6">
               Ballroom-Buddy helps you find the perfect dance partner with ease.
               Create a profile, specify your preferred dance styles, skill
               level, and role (leader or follower), and search for dancers
@@ -121,7 +121,7 @@
             </p>
           </div>
           <div class="px-[10%] text-justify max-w-screen-sm">
-            <p class="text-sm leading-tight">
+            <p class="text-sm leading-tight p-6">
               Dance is best when shared. Ballroom-Buddy brings dancers together,
               matching leaders and followers across a variety of styles and
               levels. Easily filter by location, dance type, and experience to
@@ -133,7 +133,7 @@
           </div>
         </div>
         <div>
-          <h2 class="text-center text-3xl font-bold pb-5">
+          <h2 class="text-center text-3xl font-bold pb-5 md:pt-5">
             What makes us special
           </h2>
           <ul
@@ -184,46 +184,68 @@
         </div>
       </section>
 
-      <section id="contact" class="text-center text-[#F4E3B8] bg-dark-blue">
+      <section
+        id="contact"
+        class="text-center text-[#F4E3B8] bg-dark-blue md:flex md:items-center md:justify-center"
+      >
         <div class="p-6 grid grid-rows-1 place-items-center">
-          <img class="" src="/images/contactImg.webp" alt="" />
+          <img class="p-4 max-w-prose" src="/images/contactImg.webp" alt="" />
         </div>
-        <div>
+        <div class="p-5 m-5">
           <h2 class="pb-3 text-3xl">Find your dance Partner</h2>
-          <div class="px-6 grid grid-cols-1 place-items-start max-w-sm w-80">
-            <label class="p-1">Full Name:</label>
-            <input
-              type="text"
-              class="bg-dark-blue p-1 max-w-sm w-80 divide-y-8 divide-dashed divide-[#F4E3B8]"
-            />
-            <label class="p-1">Email:</label>
-            <input type="email" class="bg-dark-blue p-1 max-w-sm w-80" />
-            <label class="p-1">Phone Number:</label>
-            <input type="tel" class="bg-dark-blue p-1 max-w-sm w-80" />
-            <label class="p-1">Your location:</label>
-            <input type="text" class="bg-dark-blue p-1 max-w-sm w-80" />
-            <label class="p-1">Your gender:</label>
-            <select
-              name=""
-              id=""
-              class="bg-dark-blue max-w-sm w-80 divide-y-8 divide-dashed divide-[#F4E3B8]"
-            >
-              <option value="">-- select an option --</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="diverse">Diverse</option>
-            </select>
-            <label class="p-1">Dancing Role</label>
-            <select name="" id="" class="bg-dark-blue max-w-sm w-80">
-              <option value="">-- choose your role --</option>
-              <option value="leader">leader</option>
-              <option value="folower">folower</option>
-              <option value="both">both</option>
-              <option value="bothl">both but prefer leader</option>
-              <option value="bothf">both but prefer folower</option>
-            </select>
+          <div class="flex items-center justify-center">
+            <div class="px-6 grid grid-cols-1 place-items-center">
+              <label class="p-1">Full Name:</label>
+              <input
+                type="text"
+                class="bg-dark-blue p-1 w-80 border border-light-yellow rounded"
+              />
+              <label class="p-1">Email:</label>
+              <input
+                type="email"
+                class="bg-dark-blue p-1 w-80 border border-light-yellow rounded"
+              />
+              <label class="p-1">Phone Number:</label>
+              <input
+                type="tel"
+                class="bg-dark-blue p-1 w-80 border border-light-yellow rounded"
+              />
+              <label class="p-1">Your location:</label>
+              <input
+                type="text"
+                class="bg-dark-blue p-1 w-80 border border-light-yellow rounded"
+              />
+              <label class="p-1">Your gender:</label>
+              <select
+                name=""
+                id=""
+                class="bg-dark-blue max-w-sm w-80 border border-light-yellow rounded text-center"
+              >
+                <option value="">-- select an option --</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="diverse">Diverse</option>
+              </select>
+              <label class="p-1">Dancing Role</label>
+              <select
+                name=""
+                id=""
+                class="bg-dark-blue w-80 border border-light-yellow rounded text-center"
+              >
+                <option value="">-- choose your role --</option>
+                <option value="leader">leader</option>
+                <option value="folower">folower</option>
+                <option value="both">both</option>
+                <option value="bothl">both but prefer leader</option>
+                <option value="bothf">both but prefer folower</option>
+              </select>
 
-            <button>start your journey</button>
+              <button
+                class="m-4 px-4 py-2 border border-light-yellow font-bold hover:bg-light-yellow hover:text-dark-blue"
+              >
+                start your journey
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -303,17 +325,21 @@
       </section>
     </main>
     <footer id="footer" class="border">
-      <div class="grid grid-rows-2 bg-dark-blue text-light-yellow pt-10">
-        <div class="flex items-center justify-center">
-          <div class="grid grid-cols-2 w-1/2 justify-center items-center pb-8">
-            <img class="" src="/images/icons8-location-50.png" alt="" />
-            <p class="m-[-4rem] text-sm">
+      <div class="grid grid-rows-2 md:grid-cols-2 bg-dark-blue text-light-yellow pt-10">
+        <div class="">
+          <div class="grid grid-cols-2 w-1/2 items-center pb-8">
+            <div class="grid items-center justify-end">
+              <img class="" src="/images/icons8-location-50.png" alt="" />
+            </div>
+            <p class="">
               ADDRESS: Siegessäule <br />
               Straße des 17. Juni <br />
               10557 Berlin, Deutschland
             </p>
-            <img class="" src="/images/icons8-phone-50.png" alt="" />
-            <p class="m-[-4rem] text-sm">PHONE: +4912341234</p>
+            <div class="grid items-center justify-end">
+              <img class="" src="/images/icons8-phone-50.png" alt="" />
+            </div>
+            <p class="">PHONE: +4912341234</p>
           </div>
         </div>
         <div class="flex item-center justify-center">
