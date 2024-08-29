@@ -38,7 +38,7 @@
       }
       @media (max-width: 600px) {
         html {
-          font-size: 30%;
+          font-size: 40%;
         }
       }
     </style>
@@ -105,12 +105,12 @@
       </section>
       <section
         id="info"
-        class="grid place-item-center grid-rows-2 md:grid-cols-2 border bg-[#F4E3B8]"
+        class="flex flex-col md:flex-row justify-around items-start bg-light-yellow text-dark-blue py-20"
       >
-        <div class="flex flex-col items-center justify-center">
-          <h2 class="text-center text-3xl font-bold pt-5">How does it work?</h2>
+        <div class="flex flex-col items-center justify-center mb-8">
+          <h2 class="text-center text-3xl font-bold mb-5">How does it work?</h2>
           <div class="px-[10%] text-justify max-w-screen-sm">
-            <p class="text-sm leading-tight p-6">
+            <p class="text-[14px] leading-tight p-6">
               Ballroom-Buddy helps you find the perfect dance partner with ease.
               Create a profile, specify your preferred dance styles, skill
               level, and role (leader or follower), and search for dancers
@@ -121,7 +121,7 @@
             </p>
           </div>
           <div class="px-[10%] text-justify max-w-screen-sm">
-            <p class="text-sm leading-tight p-6">
+            <p class="text-[14px] leading-tight p-6">
               Dance is best when shared. Ballroom-Buddy brings dancers together,
               matching leaders and followers across a variety of styles and
               levels. Easily filter by location, dance type, and experience to
@@ -132,12 +132,12 @@
             </p>
           </div>
         </div>
-        <div>
-          <h2 class="text-center text-3xl font-bold pb-5 md:pt-5">
+        <div class="flex flex-col items-center justify-start gap-[1.5rem] mb-8">
+          <h2 class="text-center text-3xl font-bold mb-5">
             What makes us special
           </h2>
           <ul
-            class="px-[7%] text-justify max-w-screen-sm list-disc text-sm leading-loose"
+            class="w-[92%] px-[7%] text-justify max-w-screen-sm list-disc text-[14px]"
           >
             <li>
               Role Matching: Find partners who match your role as a leader,
@@ -325,7 +325,9 @@
       </section>
     </main>
     <footer id="footer" class="border">
-      <div class="grid grid-rows-2 md:grid-cols-2 bg-dark-blue text-light-yellow pt-10">
+      <div
+        class="grid grid-rows-2 md:grid-cols-2 bg-dark-blue text-light-yellow pt-10"
+      >
         <div class="">
           <div class="grid grid-cols-2 w-1/2 items-center pb-8">
             <div class="grid items-center justify-end">
