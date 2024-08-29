@@ -79,7 +79,7 @@
     <main>
       <section
         id="hero"
-        class="section__hero bg-dark-blue mt-20 flex justify-between items-center ctext-light-yellow"
+        class="section__hero bg-dark-blue mt-20 flex justify-between items-center p-16 text-light-yellow"
       >
         <div class="w-6/12 pr-20 flex flex-col gap-20">
           <h1 class="text-3xl font-bold">
@@ -324,37 +324,39 @@
         </div>
       </section>
     </main>
-    <footer id="footer" class="border">
-      <div
-        class="grid grid-rows-2 md:grid-cols-2 bg-dark-blue text-light-yellow pt-10"
-      >
-        <div class="">
-          <div class="grid grid-cols-2 w-1/2 items-center pb-8">
-            <div class="grid items-center justify-end">
-              <img class="" src="/images/icons8-location-50.png" alt="" />
-            </div>
-            <p class="">
-              ADDRESS: Siegessäule <br />
-              Straße des 17. Juni <br />
-              10557 Berlin, Deutschland
-            </p>
-            <div class="grid items-center justify-end">
-              <img class="" src="/images/icons8-phone-50.png" alt="" />
-            </div>
-            <p class="">PHONE: +4912341234</p>
-          </div>
+    <footer
+      id="footer"
+      class="py-16 bg-dark-blue flex flex-col text-light-yellow items-center gap-[3rem]"
+    >
+      <div class="">
+        <div class="flex justify-between items-center">
+          <img
+            class="w-[30px] mr-6"
+            src="images/icons8-location-50.png"
+            alt=""
+          />
+
+          <p class="">
+            ADDRESS: Siegessäule <br />
+            Straße des 17. Juni <br />
+            10557 Berlin, Deutschland
+          </p>
         </div>
-        <div class="flex item-center justify-center">
-          <div class="grid grid-cols-4 w-1/2">
-            <img class="" src="/images/icons8-instagram-50.png" alt="" />
-            <img class="" src="/images/icons8-facebook-50-2.png" alt="" />
-            <img class="" src="/images/icons8-twitter-50.png" alt="" />
-            <img class="" src="/images/icons8-whatsapp-50.png" alt="" />
-          </div>
+        <div class="flex items-center">
+          <img class="w-[30px] mr-6" src="images/icons8-phone-50.png" alt="" />
+          <p class="">PHONE: +4912341234</p>
         </div>
       </div>
-      <div class="bg-light-yellow">
-        <p class="text-center text-xs p-2">
+
+      <div class="w-[20%] flex justify-between items-center">
+        <img class="w-[30px]" src="images/icons8-instagram-50.png" alt="" />
+        <img class="w-[30px]" src="images/icons8-facebook-50-2.png" alt="" />
+        <img class="w-[30px]" src="images/icons8-twitter-50.png" alt="" />
+        <img class="w-[30px]" src="images/icons8-whatsapp-50.png" alt="" />
+      </div>
+
+      <div class="w-full bg-light-yellow">
+        <p class="text-center text-dark-blue text-xs p-2">
           &copy;2015-2024 Your Ballroom-Buddy. All Rights reserved.
         </p>
       </div>
